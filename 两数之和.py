@@ -11,7 +11,7 @@ while True:
         a = 0
         d1 = {}
         for i, num in enumerate(l1):
-            d1[i] = num
+            d1[num] = i
             if d1.get(x - num) is not None:
                 print(num, x - num)
     except:
