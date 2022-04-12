@@ -11,8 +11,8 @@ while True:
         a = 0
         d1 = {}
         for i, num in enumerate(l1):
-            d1[num] = i
             if d1.get(x - num) is not None:
                 print(num, x - num)
+            d1[num] = i      # 这句不能放在if 之前 ，会出现  x -num = num # 输入 4 然后 1 2 1 1 会返回 2 2
     except:
         break
